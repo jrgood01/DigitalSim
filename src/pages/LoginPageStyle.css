@@ -1,0 +1,42 @@
+.LoginContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; /* Set to your desired width */
+    height: 350px; /* Set to your desired height */
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 20px; /* Add some padding */
+}
+
+.LoginContainer h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.LoginContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginContainer form .ant-form-item {
+    margin-bottom: 0; /* Remove the default bottom margin */
+}
+
+.LoginContainer form .ant-input {
+    height: 40px; /* Make the inputs a bit taller */
+}
+
+.LoginContainer form .ant-btn {
+    height: 40px; /* Make the button a bit taller */
+    font-size: 18px; /* Increase the button text size */
+}
+
+.LoginContainer form .ant-form-item:last-child {
+    display: flex;
+    justify-content: space-between; /* Align the links to the sides */
+}
