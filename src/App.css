@@ -30,3 +30,7 @@
   color: #f55;
   font-size: 80px;
 }
+
+.CenterBox a {
+  margin-left: 20px;
+}
