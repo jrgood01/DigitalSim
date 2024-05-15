@@ -2,6 +2,9 @@ import React from 'react';
 import '../App.css';
 import { Navbar, Nav, Dropdown } from 'react-bootstrap';
 import ToolboxComponent from '../simulator/ToolboxComponent';
+import { faSearchPlus, faSearchMinus, faArrowsAlt, faCrosshairs } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SimulationComponent from '../simulator/SimulationComponent';
 
 function ProjectPage() {
     return (
@@ -35,7 +38,14 @@ function ProjectPage() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+            <div className="icon-container">
+                <FontAwesomeIcon icon={faArrowsAlt} className="icon" /> {/* Pan */}
+                <FontAwesomeIcon icon={faSearchPlus} className="icon" /> {/* Zoom In */}
+                <FontAwesomeIcon icon={faSearchMinus} className="icon" /> {/* Zoom Out */}
+                <FontAwesomeIcon icon={faCrosshairs} className="icon" /> {/* Center */}
+            </div>
             <ToolboxComponent />
+            <SimulationComponent/>
         </div>
     );
 };

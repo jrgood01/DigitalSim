@@ -1,0 +1,8 @@
+.stage-container {
+    position: fixed;
+    left: 190px;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1;
+    top: 0px;
+}
