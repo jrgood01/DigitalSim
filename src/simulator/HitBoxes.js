@@ -6,4 +6,12 @@ const getGateHitBoxes = (x, y) => {
     ];
 }
 
-export { getGateHitBoxes}
+const drawHitBox = (ctx, x, y) => {
+    ctx.beginPath();
+    //Set stroke width
+    ctx.lineWidth = 2;
+    ctx.rect(x, y, 10, 10);
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
+}
+export { getGateHitBoxes, drawHitBox }

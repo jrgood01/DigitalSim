@@ -1,10 +1,5 @@
-const drawGrid = (canvas, ctx, offsetX, offsetY) => {
-    const dpr = window.devicePixelRatio || 1;
+const drawGrid = (canvas, ctx, offsetX, offsetY, dpr) => {
 
-    // Adjust canvas size for device pixel ratio
-    canvas.width = canvas.clientWidth * dpr;
-    canvas.height = canvas.clientHeight * dpr;
-    ctx.scale(dpr, dpr);
 
     const gridXOffset = offsetX % 10;
     const gridYOffset = offsetY % 10;
