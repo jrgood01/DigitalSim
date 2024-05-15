@@ -13,6 +13,39 @@
   background-size: 60px 60px;
 }
 
+.custom-navbar  {
+  background-color: #282c34; /* Change this to your desired color */
+}
+
+#dropdown-basic {
+  background-color: #282c34;
+  border-color: transparent;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #222222;
+  --bs-dropdown-link-color: #fefefe;
+}
+
+.dropdown-it {
+  color: white;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: rgb(27, 26, 26); /* Change this to your desired text color */
+}
+
+.Background-no-grid {
+  background-color: #282c34;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
 .CenterBox {
   position: absolute;
   top: 50%;

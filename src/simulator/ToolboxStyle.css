@@ -1,0 +1,20 @@
+.ToolBox {
+    width: 190px;
+    height: 1000%;
+    background-color: #222;
+}
+
+.ToolBoxHeader {
+    height: 20px;
+    text-align: center;
+    color: white;
+    background-color: #55f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ToolBoxHeader p {
+    font-size: 10px;
+    margin: 0;  /* Reset the margin to remove any default margin */
+}

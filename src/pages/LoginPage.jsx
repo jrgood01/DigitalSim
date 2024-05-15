@@ -55,7 +55,7 @@ function LoginPage() {
                             disabled={loading}
                         />
                     </Form.Group>
-                    {errorMessage && <h3 style={{color: "red"}} className="error-message">{errorMessage}</h3>}
+                    {errorMessage && <h3 style={{color: "red", fontSize:"12px"}}>{errorMessage}</h3>}
                     <button type="submit" className="btn btn-primary" disabled={loading}>
                         {loading ? 'Loading...' : 'Submit'}
                     </button>

@@ -1,0 +1,39 @@
+.toolbox-item {
+    width: 100%;
+    height: 60px;
+}
+
+.toolbox-item .canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+}
+
+.toolbox-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    color: white;
+    /* align verticle center */
+    align-items: center;
+
+}
+
+.toolbox-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.toolbox-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.canvas-container img {
+    width: 50px;
+    height: 50px;
+}
