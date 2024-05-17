@@ -14,6 +14,14 @@ const getConstHitBoxes = (x, y) => {
     ]
 }
 
+const getHitBoxes = (elementType, x, y) => {
+    if (elementType === 'and' || elementType === 'or') {
+        return getGateHitBoxes(x, y);
+    } else if (elementType === 'const') {
+        return getConstHitBoxes(x, y);
+    }
+}
+
 const drawHitBox = (ctx, x, y) => {
     const [coordX, coordY] = snapToGrid(x, y)
     ctx.beginPath();
@@ -23,4 +31,4 @@ const drawHitBox = (ctx, x, y) => {
     ctx.strokeStyle = 'red';
     ctx.stroke();
 }
-export { getGateHitBoxes, getConstHitBoxes, drawHitBox }
+export { getGateHitBoxes, getConstHitBoxes, getHitBoxes, drawHitBox }
